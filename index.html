@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Autonomous navigation with Language augmented Topometric maps">
+  <meta name="keywords" content="Navigation, Self-Driving, CLIP, Multimodal, Localization">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALT-Pilot</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Exploiting Distribution Constraints for Scalable and Efficient
+              Image Retrieval</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://mohdomama.github.io/">Mohammad Omama</a>,</span>
+              <span class="author-block">
+                <a href="https://d31003.github.io/">Po-han Li</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=262ASa4AAAAJ&hl=en">Sandeep Chinchali</a></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>The University of Texas at Austin</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://openreview.net/forum?id=d0tlL0ZWlu"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>OpenReview (ICLR 2025 Accepted)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2410.07022" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="static/Omama_ICLR_2025_Poster.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span>Poster</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark" disabled="true">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Blog</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Horizontal line with width 80% -->
+  <hr style="width:80%; margin:auto; padding-bottom: 0; margin-bottom: 0; height: 1px; background-color: #e5e5e5;" />
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Image retrieval is a crucial problem in robotics and computer vision, with downstream applications in
+              robot place recognition and vision-based product recommendations. Modern retrieval systems face two key
+              challenges: scalability and efficiency. State-of-the-art image retrieval systems train specific neural
+              networks for each dataset, an approach that lacks scalability. Furthermore, since retrieval speed is
+              directly proportional to embedding size, existing systems that use large embeddings lack efficiency. To
+              tackle scalability, recent works propose using off-the-shelf foundation models. However, these models,
+              though applicable across datasets, fall short in achieving performance comparable to that of
+              dataset-specific models. Our key observation is that, while foundation models capture necessary subtleties
+              for effective retrieval, the underlying distribution of their embedding space can negatively impact cosine
+              similarity searches. We introduce Autoencoders with Strong Variance Constraints (AE-SVC), which, when used
+              for projection, significantly improves the performance of foundation models. We provide an in-depth
+              theoretical analysis of AE-SVC. Addressing efficiency, we introduce Single-shot Similarity Space
+              Distillation ((SS)<sub>2</sub>D), a novel approach to learn embeddings with adaptive sizes that offers a
+              better trade-off between size and performance. We conducted extensive experiments on four retrieval
+              datasets, including Stanford Online Products (SoP) and Pittsburgh30k, using four different off-the-shelf
+              foundation models, including DinoV2 and CLIP. AE-SVC demonstrates up to a 16% improvement in retrieval
+              performance, while (SS)<sub>2</sub>D shows a further 10% improvement for smaller embedding sizes.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+  </section>
+
+
+
+
+  <section class="section">
+    <center>
+      <h2 class="title is-3">Methodology</h2>
+    </center>
+    <div class="hero-body">
+      <div class="container" style="width: 60%; margin: auto; padding-bottom: 0; margin-bottom: 0; height: auto;">
+        <center>
+          <img src="./static/images/pipeline.png" alt="pipeline" style="width:100%; display:block; margin:auto;">
+        </center>
+        <br>
+
+        <strong>Figure:</strong> The proposed approach follows a two-step pipeline. <strong>(A)</strong> AE-SVC trains
+        an
+        autoencoder with
+        our constraints to improve foundation model embeddings. <strong>(B)</strong> (SS)<sub>2</sub>D uses the
+        improved embeddings from AE-SVC to learn adaptive embeddings for improved retrieval at any embedding size.
+        <strong>(C)</strong>
+        Once trained, (SS)<sub>2</sub>D can be directly applied to foundation model embeddings to generate adaptive
+        embeddings for improved retrieval. <strong>(D)</strong> AE-SVC (orange) boosts performance significantly, while
+        (SS)<sub>2</sub>D
+        (green) further enhances results with smaller embeddings. Dino (blue) achieves optimal performance at 9 GLOPs,
+        whereas (SS)<sub>2</sub>D on top of AE-SVC achieves similar performance at only 2.5 GLOPs.
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <center>
+      <h2 class="title is-3">Impact of the Proposed Constraints on the Cosine Similarity Distribution</h2>
+    </center>
+    <div class="hero-body">
+      <div class="container" style="width: 60%; margin: auto; padding-bottom: 0; margin-bottom: 0; height: auto;">
+        <center>
+          <img src="./static/images/theory_sim_space.png" alt="sim space"
+            style="width:100%; display:block; margin:auto;">
+        </center>
+        <br>
+
+        <strong>Figure:</strong> AE-SVC reduces the variance of cosine similarity distributions in both foundation (a)
+        and dataset-specific models (b), with a more significant shift in foundation models (a). This results in greater
+        improvement in retrieval performance for the foundation model (Dino) compared to the dataset-specific model
+        (Cosplace), as shown in (c).
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <center>
+      <h2 class="title is-3">AE-SVC Results</h2>
+    </center>
+    <div class="hero-body">
+      <div class="container" style="width: 60%; margin: auto; padding-bottom: 0; margin-bottom: 0; height: auto;">
+        <center>
+          <img src="./static/images/exp_vapca.png" alt="AE-SVC" style="width:100%; display:block; margin:auto;">
+        </center>
+        <br>
+
+        <strong>Figure:</strong> AE-SVC significantly improves the retrieval performance of foundation models. AE-SVC
+        (solid lines) consistently outperforms the off-the-shelf foundation models, i.e., PCA (dashed lines), on four
+        datasets, achieving a 15.5% average improvement in retrieval performance.
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <center>
+      <h2 class="title is-3">(SS)<sub>2</sub>D Results</h2>
+    </center>
+    <div class="hero-body">
+      <div class="container" style="width: 60%; margin: auto; padding-bottom: 0; margin-bottom: 0; height: auto;">
+        <center>
+          <img src="./static/images/exp_ss2d.png" alt="SS2D" style="width:100%; display:block; margin:auto;">
+        </center>
+        <br>
+
+        <strong>Figure:</strong> Applying (SS)<sub>2</sub>D over AE-SVC leads to further performance boost at lower
+        embedding sizes. Compared to VAE and SSD, (SS)<sub>2</sub>D offers superior single-shot dimensionality
+        reduction, achieving up to a 10% enhancement at smaller embedding sizes, closely approaching SSD’s theoretical
+        upper bound.
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <br><br>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{omama2025exploitingdistributionconstraintsscalable,
+title={Exploiting Distribution Constraints for Scalable and Efficient Image Retrieval}, 
+author={Mohammad Omama and Po-han Li and Sandeep P. Chinchali},
+year={2025},
+eprint={2410.07022},
+archivePrefix={arXiv},
+primaryClass={cs.IR},
+url={https://arxiv.org/abs/2410.07022}}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
